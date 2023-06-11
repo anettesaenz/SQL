@@ -1,0 +1,26 @@
+``Create a Clothing Store Database``
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, size TEXT, price INTEGER, color TEXT, quantity INTEGER);
+
+INSERT into clothing VALUES (1, "Pants", "S", 10.00, "blue", 6); 
+INSERT into clothing VALUES (2, "Pants", "M", 10.99, "Blue", 9);
+INSERT into clothing VALUES (3, "Top", "S", 5.99, "Red", 24);
+INSERT into clothing VALUES (4, "Top", "M", 5.99, "Yellow", 64);
+INSERT into clothing VALUES (5, "Top", "L", 5.99, "Green", 23);
+INSERT into clothing VALUES (6, "Top", "S", 5.99, "Orange",6);
+INSERT into clothing VALUES (7, "Skirt", "S", 7.99, "Purple", 21);
+INSERT into clothing VALUES (8, "Sweater", "M", 18.99, "Pink", 2);
+INSERT into clothing VALUES (9, "Shorts", "S" , 12.99, "Blue", 10);
+INSERT into clothing VALUES (10, "Shorts", "M" , 12.99, "Black", 4);
+INSERT into clothing VALUES (11, "Skirt", "S", 7.99, "Black", 6);
+INSERT into clothing VALUES (12, "Skirt", "M", 7.99, "Nude", 10);
+INSERT into clothing VALUES (13, "Shorts", "S", 12.99, "White", 7);
+INSERT into clothing VALUES (14, "Sweater", "L", 18.99, "Green", 5);
+INSERT into clothing VALUES (15, "Sweater", "M", 18.99, "Orange", 14);
+
+--Display the Database ordered by price
+SELECT * FROM clothing ORDER BY price;
+
+--Display the Database only Size Small and quantity is more than 15
+/*AND*/
+SELECT * FROM clothing WHERE Size > "M" AND quantity > 15;  
